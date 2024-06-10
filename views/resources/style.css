@@ -6,12 +6,14 @@
     margin: 0;
     --text-opacity: 1;
     --bg-opacity: 1;
+    --back-color: rgb(243 244 246 / 0.4);
 }
 
 body {
-    overflow: hidden;
+    overflow-x: hidden;
     width: 100vw;
     height: 100vh;
+    background-color: var(--back-color)
 }
 
 .body {
@@ -28,7 +30,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: rgb(243 244 246 / 0.4);
     padding-right: 0;
 
     ul.options-sidebar {
@@ -62,5 +63,29 @@ body {
             }
 
         }
+    }
+}
+
+.top-content {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+.main-content {
+    background-color: #fff;
+    padding: 5pt;
+    border-radius: 5px;
+    width: 85vw;
+    height: 85vh;
+    overflow: scroll;
+    overflow-x: hidden;
+
+    .top-table {
+        height: 10%;
+    }
+
+    .container-table {
+        height: 90%;
     }
 }
