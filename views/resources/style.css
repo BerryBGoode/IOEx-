@@ -81,6 +81,10 @@ body {
     overflow: scroll;
     overflow-x: hidden;
 
+    .border {
+        border: solid rgb(229 231 235 / var(--bg-opacity)) 1px;
+    }
+
     .top-table {
         height: 10%;
     }

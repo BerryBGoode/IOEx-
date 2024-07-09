@@ -21,15 +21,10 @@
                     <span class="bold">IOExpress</span>
                 </div>
                 <div class="content-sidebar">
-                    <ul class="options-sidebar">
-                        <li><a href="">a</a></li>
-                        <li><a href="">b</a></li>
-                        <li><a href="">c</a></li>
-                        <li><a href="">d</a></li>
-                    </ul>
+                    <ul class="options-sidebar" id="options-sidebar"></ul>
                 </div>
                 <div class="buttom-sidebar">
-                    <a type="button" data-bs-toggle="tooltip" data-bs-html="true"
+                    <a type="button" data-bs-toggle="tooltip" data-bs-html="true" id="add-option"
                         data-bs-title="<span>add option</span>">
                         <svg xmlns="http://www.w3.org/2000/svg" class="add-option" width="28" height="28"
                             viewBox="0 0 24 24">
@@ -57,41 +52,43 @@
             </div>
 
             <div class="row main-content">
-                <div class="row top-table">
-                    <div class="col-6 mb-3">
-                        <h4 class="bold">Top bar</h4>
+                <div class="border">
+                    <div class="row top-table">
+                        <div class="col-6 mb-3 mt-2">
+                            <h4 class="bold">Top bar</h4>
+                        </div>
                     </div>
-                </div>
-                <div class="row container-table">
-                    <table class="table table-hover">
-                        <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">First</th>
-                                <th scope="col">Last</th>
-                                <th scope="col">Handle</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td colspan="2">Larry the Bird</td>
-                                <td>@twitter</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="row container-table">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First</th>
+                                    <th scope="col">Last</th>
+                                    <th scope="col">Handle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td colspan="2">Larry the Bird</td>
+                                    <td>@twitter</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
 
@@ -102,5 +99,6 @@
 <script src="../bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
 <script src="../bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
 <script src="resources/script.js"></script>
+<script src="../controllers/options.js"></script>
 
 </html>
